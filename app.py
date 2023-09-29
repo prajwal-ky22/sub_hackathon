@@ -61,7 +61,7 @@ def main():
 	month = st.selectbox('Month:',pd.unique(df['month']))
 	duration = st.number_input("Day",min_value=0)
 	campaign = st.number_input("Campaign",min_value=1,max_value=31)
-	pdays = st.number_input("PrevDays",min_value=0)
+	pdays = st.number_input("PrevDays",min_value=-1)
 	previous = st.number_input("Previous",min_value=0)
 	poutcome = st.selectbox('Prev. campaign outcome:',pd.unique(df['poutcome']))
 
